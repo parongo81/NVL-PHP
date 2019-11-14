@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NVL-PHP-FORM-1</title>
+</head>
+<body>
+
+	<!--Subir el código necesario para simular un formulario de registro, que contenga 3 campos. Email, contraseña y otro con la confirmación de la contraseña.
+
+	Es necesario que haya 1 fichero html que contenga el HTML con el formulario, y un script en PHP donde se recojan los datos y se compruebe que los 2 campos de contraseñas son iguales y que tienen al menos una longitud de 8 caracteres.
+
+	Si no se cumplen las 2 condiciones mostrar por pantalla “Error en el formulario” (podéis imprimir el mensaje con la palabra reservada echo), si todo fue bien mostrar «Datos procesados correctamente» -->
+
+	<form  action="recibe.php" method="POST" >
+		
+		<label for="usuario">Email</label> 
+		<input id="usuario" type="mail" name="mail" placeholder="Email valido"><br><br>
+		<label for="contraseña">Contraseña</label>
+		<input id="contraseña" type="password" name="contraseña" placeholder="Minimo 8 caracteres"><br><br>
+		<label for="repite">Repita contraseña</label>
+		<input id="repite" type="password" name="repitaContraseña" placeholder="Repita contraserña"><br><br>
+		<input type="submit" value="Validar datos" name="validar">
+
+	</form>
+	
+
+	
+</body>
+</html>
